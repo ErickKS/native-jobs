@@ -10,7 +10,7 @@ const Tab = createBottomTabNavigator();
 const screenOptions: BottomTabNavigationOptions = {
   headerShown: false,
   tabBarStyle: {
-    backgroundColor: "#09090A",
+    backgroundColor: "#222222",
     borderTopWidth: 0,
   },
   tabBarActiveTintColor: "#8b5cf6",
@@ -32,7 +32,7 @@ export default function TabRoutes() {
         name="Search"
         component={Search}
         options={{
-          tabBarIcon: ({ color, size }) => <Feather name="plus" color={color} size={20} />,
+          tabBarIcon: ({ color, size }) => <Feather name="search" color={color} size={20} />,
           tabBarLabel: "Search",
         }}
       />
